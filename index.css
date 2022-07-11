@@ -176,6 +176,7 @@
         
         footer {
             color: #613F75;
+            text-shadow: black 0px 1px 0px;
             font-weight: bold;
             text-align: center;
             padding: 10% 0px 0px 0px;
