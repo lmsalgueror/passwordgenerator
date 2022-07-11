@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Password generator</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<banner>
+    <div id="banner-img">
+        <img id="security-img" src="img/3043753.png">
+    </div>
+
+    <div id="banner-text">
+        <h1 id="banner-title">Password generator</h1>
+        <h3 id="banner-subtitle"> <span class="underline">Never</span> use an insecure password <span class="underline">again</span></h3>
+    </div>
+</banner>
+
+<body>
+    <div id="attributes-section">
+        <div id="options-section">
+            <h3>Select the options to create your password</h3>
+            <div id="selection-section">
+
+                <label>Password length: <input id="length-el" type="number" placeholder="Enter number"> </label>
+
+                <div id="characters-section">
+                    <p>¿Do you want to include?</p>
+                    <label for="numbers">
+                        <input type="checkbox" id="number-el" name="numbers">  Numbers 
+                     </label>
+                    <label for="symbols">
+                        <input type="checkbox" id="symbol-el" name="symbols">  Symbols 
+                     </label>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="button-section">
+            <button class="button-org" onclick="passGen()">Generate password</button>
+            <button class="button-org" onclick="reset()">Reset</button>
+        </div>
+
+    </div>
+
+    <div id="passwords-section">
+        <div id="password-box">
+            <div class="passwords">
+                <p> First password: </p>
+                <p id="passwordOne"> </p>
+            </div>
+            <div class="passwords">
+                <p> Second password: </p>
+                <p id="passwordTwo"> </p>
+            </div>
+        </div>
+
+        <div id="button-pass-section">
+            <button id="copy-btn-one" class="button-copy" onclick="copyToClipboardOne()">Copy to clipboard</button>
+            <button id="copy-btn-two" class="button-copy" onclick="copyToClipboardTwo()">Copy to clipboard</button>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+<footer>
+    <div id="div1">
+        <p>By Lina María Salguero</p>
+        <span id="date-el"> . </span>
+    </div>
+
+</footer>
+
+</html>
