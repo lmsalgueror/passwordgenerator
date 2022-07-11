@@ -125,14 +125,8 @@ function copyToClipboardTwo() {
 const today = new Date()
 let textDate = today.getDate() + "/" + (today.getMonth() + 1) + "/" + today.getFullYear()
 
+
 console.log(textDate);
 
-const parent = document.getElementById("div1");
 const child = document.getElementById("date-el");
-const para = document.createElement("p");
-para.setAttribute("id", "newSpan")
-const node = document.createTextNode(textDate);
-para.appendChild(node);
-let sp2 = document.getElementById("childSpan")
-let parentDiv = sp2.parentNode;
-parent.replaceChild(para, child);
+child.innerHTML = "< p >" + textDate + "< /p>"
